@@ -10,8 +10,9 @@
     <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/site.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
     <style>
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
@@ -23,7 +24,7 @@
   </head>
   <body>
       <h4>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">                 
                   <a class="navbar-brand" href="#">Mirko Hairdresser</a>
@@ -47,6 +48,7 @@
             </div>
         </nav>    
       </h4>
+      <br>
       <div class="container">
       <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -90,7 +92,7 @@
             Naroči se
         </h2>  
         <div class="container">
-            <div class="col-md-4 pull-left">
+            <div class="col-md-5 pull-left">
                  <br>
                  <div class="form-group">
                     <label for="name">Ime:</label>
@@ -108,12 +110,16 @@
                     <label for="comment">Ostalo(želje glede pričeske itd.):</label>
                     <textarea class="form-control" rows="3" id="comment"></textarea>
                 </div> 
-                <input type="checkbox" id="checkbox1" class="checkbox style-2 " checked="checked"/>                           
-                <div>
-                    Strinjam se, da je Mirko najboljši frizer.
-                </div>  
-                <div>
-                    <button type="button" class="btn btn-primary btn-md pull-right">Pošlji</button>
+                <div class="row">
+                    <div class="col-md-10">                           
+                        <div>
+                            Strinjam se, da je Mirko najboljši frizer.
+                        </div>  
+                         <input type="checkbox" id="checkbox1" class="checkbox style-2 " checked="checked"/> 
+                    </div>                     
+                    <div class="col-md-2 pull-right">
+                        <button type="button" class="btn btn-primary btn-md pull-right">Pošlji</button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 pull-right">  
@@ -168,6 +174,51 @@
         <h2 align="center">
             FAQ(Pogosta vprašanja)
         </h2>     
+        <br>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Kakšen je salon in ekipa?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Ali sprejemate hišne ljubljenčke?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Imate kakšne nagrade iz tekmovanj?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <div>
     <!--  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
